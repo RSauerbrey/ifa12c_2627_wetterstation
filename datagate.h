@@ -9,7 +9,7 @@ public:
     virtual string getSensorType() = 0;
     virtual void fetchData(double a[]) = 0;
     virtual int dataSize() = 0;
-    //virtual ~DataGate() = default;
+    virtual ~DataGate() = default;
 };
 
 #endif // DATAGATE_H

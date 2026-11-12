@@ -27,3 +27,9 @@ int MaxAnalyzer::dataSize()
 {
     return 1;
 }
+
+void MaxAnalyzer::test()
+{
+    cout << "Unterklassenmethode" << endl;
+    Analyzer::test();
+}

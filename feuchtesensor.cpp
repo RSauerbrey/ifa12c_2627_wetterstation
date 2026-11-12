@@ -1,15 +1,25 @@
 #include "feuchtesensor.h"
+#include <iostream>
+using namespace std;
 
 FeuchteSensor::FeuchteSensor()
 {
-    cout << "FeuchteSensor Konstruktor" << endl;
+    cout << "-- FeuchteSensor Konstruktor --" << endl;
     srand(time(NULL));
+    double avg = 0;
+    double max = 0;
     for(int i = 0 ; i < 5; i++)
-        // ertstelle Werte zwischen 0 und 100
+    {
         messdata[i] = rand()%1001/10.0;
+        if( max < messdata[i])
+            max = messdata[i];
+        avg = avg + messdata[i];
+    }
+    avg = avg/dataSize();
     //Ausgabe der Testdaten
-    //for(int i = 0 ; i < 5; i++)
-    //    cout << messdata[i] << endl;
+    cout << "Durchschnitt Feuchte:" << avg << endl;
+    cout << "Maximalwert Feuchte:" << max << endl;
+    cout << "------ Ende Konstruktor -------" << endl;
 }
 
 

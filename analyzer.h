@@ -9,6 +9,7 @@ protected:
     DataGate *dG;
 public:
     Analyzer(DataGate *dG);
+    virtual void test();
 };
 
 #endif // ANALYZER_H

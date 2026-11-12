@@ -10,6 +10,7 @@ public:
     string getSensorType();
     void fetchData(double a[]);
     int dataSize();
+    void test();
 };
 
 #endif // MAXANALYZER_H

@@ -2,8 +2,6 @@
 #define TEMPERATURSENSOR_H
 
 #include "datagate.h"
-#include <iostream>
-using namespace std;
 
 class TemperaturSensor : public DataGate
 {

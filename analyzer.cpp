@@ -7,3 +7,8 @@ Analyzer::Analyzer(DataGate *dG)
     this->dG = dG;
     cout << "Konstr. Analyzer" << endl;
 }
+
+void Analyzer::test()
+{
+    cout << "Basisklassenmethode" << endl;
+}

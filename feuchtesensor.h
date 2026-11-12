@@ -2,8 +2,6 @@
 #define FEUCHTESENSOR_H
 
 #include "datagate.h"
-#include <iostream>
-using namespace std;
 
 class FeuchteSensor : public DataGate
 {
